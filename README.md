@@ -64,5 +64,13 @@ Mean Absolute Error
 
 ## Eigenvectors distribution
 Using `GPU-only implementation in single precision`, eigenvectors were computed with the highest number of nodes allowed by the device memory capacity: `12GB` (n = 24389, grid size = 29 × 29 × 29).`Computation time was roughly four minutes`. Arbitrary eigenvectors were used to graph the sound pressure distribution for low and high frequencies in the cavity and they are shown bellow:
+
 ![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png)
+
+
+## Final notes
+-In the best case, execution time of Dense Matrix Solver was shortened from 56.73 seconds (CPU: MATLAB) to 11.52 seconds (GPU: Jacobi method) with n = 8000 and single precision. 
+-Jacobi method in single precision is the fastest method (almost five times faster) to solve the eigenvalue problem. 
+-Divide and conquer method finds the most accurate solution. As a result it has the lowest mean absolute error.
+
 
