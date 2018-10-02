@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "eigen_solver.h"
-#include "acoustic_matrices_float.h"
-#include "acoustic_matrices.h"
+#include "ElementMatrices/acoustic_matrices_float.h"
+#include "ElementMatrices/acoustic_matrices.h"
 #include "fem_builder.h"
 
 using namespace std;
@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
 
 	// ------------------------------------
 	// Input Variables
-	long n = 31; // number of nodes by side
+	long n = 4; // number of nodes by side
 	// Divide and Conquer (0) or Jacobi(1)
 	int method_type = 1;
 	// Single (0) or Double(1)
@@ -28,33 +28,12 @@ int main(int argc, char **argv) {
 
 
 
-	cout << "--------------------------------------------------------------"
-			<< endl;
-	cout << "" << endl;
-	cout << "   Acoustic Vibration of a Fluid in a Three-Dimensional Cavity" << endl;
-	cout << "              Acoustic FEM Solver using CUDA" << endl;
-	cout << "                       Authors:Juan F. Chango" << endl;
-	cout << "                       Cristóbal A. Navarro" << endl;
-	cout << "                   Mario A. González-Montenegro" << endl;
-	cout << "" << endl;
-	cout << "--------------------------------------------------------------"
-			<< endl;
-
-	cout << "--------------------------------------------------------------"
-			<< endl;
-	cout << "" << endl;
-	cout << "                       FEM Model Features" << endl;
-	cout << "" << endl;
+	cout << "--------------------------------------------------------------"<< endl;
+	cout << "FEM CUDA SOLVER" << endl;
 	cout << "	Number of DOFs per element: " << n_dofs << endl;
 	cout << "	Nodes in any side: " << n << "  Total Nodes in Model: "<<n_total << endl;
 	cout << "" << endl;
-	cout << "--------------------------------------------------------------"
-			<< endl;
 
-
-	cout << "--------------------------------------------------------------"
-			<< endl;
-	cout << "" << endl;
 
 	if (precision_type == 0){
 
