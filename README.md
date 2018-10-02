@@ -58,11 +58,15 @@ Execution Mean Time in Seconds
 ### Accuracy test for single and double precision
 Mean Absolute Error
 | Method | Single | Double |
-| --- | --- |  --- |  --- | 
+| --- | --- |  --- |
 | MATLAB|2.356 |1.356 |
 |Divide and Conquer |1.306 |1.304 |
 |Jacobi |1.787 |1.731 |
 
+## Eigenvectors distribution
+Using `GPU-only implementation in single precision`, eigenvectors were computed with the highest number of nodes allowed by the device memory capacity: `12GB` (n = 24389, grid size = 29 × 29 × 29).*Computation time was roughly four minutes*.
+
+Arbitrary eigenvectors were used to graph the sound pressure distribution for low and high frequencies in the cavity and they are shown bellow:
 
 
 
