@@ -4,7 +4,7 @@ This work describes an implementation of a FEM acoustic application on a GPU usi
 
 **Article Link**
 
-##Results:
+## Results:
 
 SINGLE PRECISION IMPLEMENTATION OF FEM MODEL
 
