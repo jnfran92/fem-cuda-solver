@@ -5,7 +5,7 @@ This work describes an implementation of a FEM acoustic application on a GPU usi
 **Article Link**
 
 ## FEM Model
-The acoustic model is a rectangular rigid-walled cavity with dimensions 'Lx × Ly × Lz = 0.414m × 0.314m × 0.360m' filled with air, for which ρ0 = 1.21kg m−3 and the speed of sound c = 342ms−1.
+The acoustic model is a rectangular rigid-walled cavity with dimensions `Lx × Ly × Lz = 0.414m × 0.314m × 0.360m` filled with air, for which `ρ0 = 1.21kg m−3` and the speed of sound `c = 342ms−1`.
 
 ## Results:
 
