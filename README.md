@@ -2,7 +2,10 @@
 
 This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries. [create an anchor](#anchors-in-markdown)
 
-**Article Link**
+
+| **Article Link** |
+|-----------------|
+| [![GPU FEM Acoustics Link Paper](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
 ## Methods
 ### FEM Model
@@ -60,7 +63,5 @@ Mean Absolute Error
 
 ## Eigenvectors distribution
 Using `GPU-only implementation in single precision`, eigenvectors were computed with the highest number of nodes allowed by the device memory capacity: `12GB` (n = 24389, grid size = 29 × 29 × 29).`Computation time was roughly four minutes`. Arbitrary eigenvectors were used to graph the sound pressure distribution for low and high frequencies in the cavity and they are shown bellow:
-![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png){:class="img-responsive"}
-![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png){:height="50%" width="50%"}
-![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png){:height="700px" width="400px"}
+![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png)
 
