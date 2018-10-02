@@ -1,14 +1,12 @@
 # Acoustic Vibration of a Fluid in a Three-Dimensional Cavity: Finite Element Method Simulation using CUDA and MATLAB
 
 This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries.
-| **Article Link** |
+
+
+| **`Article Link`** |
 |--------------------|
 | [![Article](https://img.shields.io/badge/conference-Article-blue.svg)](https://www.google.com) |
 
-
-| **`Documentation`** |
-|-----------------|
-| [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
 ## Methods
 ### FEM Model
