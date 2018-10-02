@@ -20,6 +20,10 @@ The rectangular cavity is divided into regular elements, thus the number of node
 
 Computation time was measured five times for each test (an individual test was performed for each method in single and double precision). Results are shown bellow:
 
+
+<b>*</b> **CPU:** MacBook Pro (early 2015) with a 2.9GHz Intel Core i5 processor and 8 GB 1867 MHz DDR3 RAM memory.<br> 
+<b>**</b> **GPU:** CUDA libraries running on a `TITAN X (Pascal) GPU`.<br>
+
 ### Single precision implementation:
 
 | Matrix Size n | MATLAB<sup>*</sup> | Divide and Conquer<sup>**</sup> | Jacobi<sup>**</sup> |
@@ -40,8 +44,6 @@ Computation time was measured five times for each test (an individual test was p
 |4096 |15.433 |19.780 |19.566|
 |8000 |122.548 |167.761 |127.929|
 
-<b>*</b> **CPU:** MacBook Pro (early 2015) with a 2.9GHz Intel Core i5 processor and 8 GB 1867 MHz DDR3 RAM memory.<br> 
-<b>**</b> **GPU:** CUDA libraries running on a TITAN X (Pascal) GPU.<br>
 
 
 
