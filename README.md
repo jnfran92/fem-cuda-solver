@@ -5,7 +5,7 @@ This work describes an implementation of a FEM acoustic application on a GPU usi
 
 | **`Article Link`** |
 |--------------------|
-| [![Article](https://img.shields.io/badge/conference-Article-blue.svg)](https://www.google.com) |
+| [![Article](https://img.shields.io/badge/conference-article-blue.svg)](https://www.google.com) |
 
 
 ## Methods
