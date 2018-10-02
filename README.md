@@ -4,12 +4,15 @@ This work describes an implementation of a FEM acoustic application on a GPU usi
 
 **Article Link**
 
+## FEM Model
+The acoustic model is a rectangular rigid-walled cavity with dimensions 'Lx × Ly × Lz = 0.414m × 0.314m × 0.360m' filled with air, for which ρ0 = 1.21kg m−3 and the speed of sound c = 342ms−1.
+
 ## Results:
 
 **CPU:** MacBook Pro (early 2015) with a 2.9GHz Intel Core i5 processor and 8 GB 1867 MHz DDR3 RAM memory.<br>
 **GPU:** CUDA libraries running on a TITAN X (Pascal) GPU.<br>
 
-Single precision implementation (time in seconds):
+### Single precision implementation:
 
 | Matrix Size n | MATLAB<sup>*</sup> | Divide and Conquer<sup>**</sup> | Jacobi<sup>**</sup> |
 | --- | --- |  --- |  --- | 
