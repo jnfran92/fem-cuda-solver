@@ -2,8 +2,13 @@
 
 This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries.
 | **Article Link** |
+|--------------------|
+| [![Article](https://img.shields.io/badge/conference-Article-blue.svg)](https://www.google.com) |
+
+
+| **`Documentation`** |
 |-----------------|
-| [![link](https://img.shields.io/badge/FemSolver-Article-blue.svg)](https://www.google.com) |
+| [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
 
 ## Methods
 ### FEM Model
