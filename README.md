@@ -3,7 +3,7 @@
 This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries.
 | **Article Link** |
 |-----------------|
-| [![GPU FEM Acoustics Link Paper](https://img.shields.io/badge/FemSolver-Article-blue.svg)](https://www.google.com) |
+| [![link](https://img.shields.io/badge/FemSolver-Article-blue.svg)](https://www.google.com) |
 
 ## Methods
 ### FEM Model
