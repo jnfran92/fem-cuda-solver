@@ -69,7 +69,7 @@ Mean Absolute Error
 ## Eigenvectors distribution
 Using `GPU-only implementation in single precision`, eigenvectors were computed with the highest number of nodes allowed by the device memory capacity: `12GB` (n = 24389, grid size = 29 × 29 × 29).`Computation time was roughly four minutes`. Arbitrary eigenvectors were used to graph the sound pressure distribution for low and high frequencies in the cavity and they are shown bellow:
 
-![alt text](https://imgur.com/a/tErJJBZ.png)
+![alt text](https://i.imgur.com/8tDzzqq.png)
 
 
 
