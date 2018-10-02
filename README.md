@@ -59,6 +59,7 @@ Execution Mean Time in Seconds
 
 ### Accuracy test for single and double precision
 Mean Absolute Error
+
 | Method | Single | Double |
 | --- | --- |  --- |
 | MATLAB|2.356 |1.356 |
