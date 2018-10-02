@@ -34,6 +34,7 @@ Tests were performed with different values of n in ascending order: 64, 512, 172
 
 ### Single precision implementation:
 Execution Mean Time in Seconds
+
 | Matrix Size n | MATLAB<sup>*</sup> | Divide and Conquer<sup>**</sup> | Jacobi<sup>**</sup> |
 | --- | --- |  --- |  --- | 
 |64 | 0.002 | 0.004 | 0.001|
@@ -44,6 +45,7 @@ Execution Mean Time in Seconds
 
 ### Double precision implementation:
 Execution Mean Time in Seconds
+
 | Matrix Size n | MATLAB<sup>*</sup> | Divide and Conquer<sup>**</sup> | Jacobi<sup>**</sup> |
 | --- | --- |  --- |  --- | 
 | 64 |0.002 |0.007 |0.003|
@@ -56,7 +58,12 @@ Execution Mean Time in Seconds
 `Eigenvalues` were computed with a high number of nodes `n = 8000`, in order to improve the accuracy. Test was performed for each method in single and double precision. `Mean absolute error` was calculated using the first fifteen modes when comparing with the exact solution. Results are shown bellow:
 
 ### Accuracy test for single and double precision
-
+Mean Absolute Error
+| Method | Single | Double |
+| --- | --- |  --- |
+| MATLAB|2.356 |1.356 |
+|Divide and Conquer |1.306 |1.304 |
+|Jacobi |1.787 |1.731 |
 
 ## Eigenvectors distribution
 Using `GPU-only implementation in single precision`, eigenvectors were computed with the highest number of nodes allowed by the device memory capacity: `12GB` (n = 24389, grid size = 29 × 29 × 29).*Computation time was roughly four minutes*.
