@@ -2,12 +2,6 @@
 
 This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries. [create an anchor](#anchors-in-markdown)
 
-
-## Intrduction
-
-The acoustic model is a rigid-walled cavity with enclosed fluid and rectangular faces. Three-dimensional acoustic elements are used to model the geometric form of the cavity. Natural frequencies were computed using inertia and stiffness matrices in a general eigenvalue problem. These matrices are symmetric, dense and grow in a cubic ratio from the number of divisions in the grid. The model was implemented using `cuSOLVER libraries` to solve the eigenvalue problem in single and double precision. The MATLAB implementation was performed for CPU in order to compare the results of GPU implementation. 
-The `acoustic model is a rigid-walled cavity with enclosed fluid and rectangular faces`. Three-dimensional acoustic elements are used to model the geometric form of the cavity. Natural frequencies were computed using inertia and stiffness matrices in a general eigenvalue problem. These matrices are symmetric, dense and grow in a cubic ratio from the number of divisions in the grid.  The GPU-based Jacobi method in single precision gives the best results, `this method is five times faster than the MATLAB implementation`. The divide and conquer method in double precision for GPU is the most accurate implementation when comparing with the exact solution of the model. Lastly, the sound pressure distribution in the cavity was graphed using eigenvectors.
-
 **Article Link**
 
 ## Methods
@@ -66,8 +60,7 @@ Mean Absolute Error
 
 ## Eigenvectors distribution
 Using `GPU-only implementation in single precision`, eigenvectors were computed with the highest number of nodes allowed by the device memory capacity: `12GB` (n = 24389, grid size = 29 × 29 × 29).`Computation time was roughly four minutes`. Arbitrary eigenvectors were used to graph the sound pressure distribution for low and high frequencies in the cavity and they are shown bellow:
-
-![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png)
-
-
+![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png){:class="img-responsive"}
+![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png){:height="50%" width="50%"}
+![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png){:height="700px" width="400px"}
 
