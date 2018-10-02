@@ -1,6 +1,14 @@
 # Acoustic Vibration of a Fluid in a Three-Dimensional Cavity: Finite Element Method Simulation using CUDA and MATLAB
 
-This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries. The acoustic model is a rigid-walled cavity with enclosed fluid and rectangular faces. Three-dimensional acoustic elements are used to model the geometric form of the cavity. Natural frequencies were computed using inertia and stiffness matrices in a general eigenvalue problem. These matrices are symmetric, dense and grow in a cubic ratio from the number of divisions in the grid. The model was implemented using cuSOLVER libraries to solve the eigenvalue problem in single and double precision. The MATLAB implementation was performed for CPU in order to compare the results of GPU implementation. The GPU-based Jacobi method in single precision gives the best results, this method is five times faster than the MATLAB implementation. The divide and conquer method in double precision for GPU is the most accurate implementation when comparing with the exact solution of the model. Lastly, the sound pressure distribution in the cavity was graphed using eigenvectors.
+This work describes an implementation of a FEM acoustic application on a GPU using C/C++ and CUDA libraries. 
+
+The acoustic model is a rigid-walled cavity with enclosed fluid and rectangular faces. Three-dimensional acoustic elements are used to model the geometric form of the cavity. Natural frequencies were computed using inertia and stiffness matrices in a general eigenvalue problem. These matrices are symmetric, dense and grow in a cubic ratio from the number of divisions in the grid. 
+
+The model was implemented using cuSOLVER libraries to solve the eigenvalue problem in single and double precision. The MATLAB implementation was performed for CPU in order to compare the results of GPU implementation. 
+
+The GPU-based Jacobi method in single precision gives the best results, `this method is five times faster than the MATLAB implementation`. The divide and conquer method in double precision for GPU is the most accurate implementation when comparing with the exact solution of the model. 
+
+Lastly, the sound pressure distribution in the cavity was graphed using eigenvectors.
 
 **Article Link**
 
