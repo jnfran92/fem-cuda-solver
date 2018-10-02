@@ -8,8 +8,7 @@ This work describes an implementation of a FEM acoustic application on a GPU usi
 
 SINGLE PRECISION IMPLEMENTATION OF FEM MODEL
 
-| Matrix Size n| Divide and Conquer|
-| --- | --- |  --- |  --- |
+
 | Matrix Size n | MATLAB | Divide and Conquer | Jacobi |
 | --- | --- |  --- |  --- | 
 |64 | 0.002 | 0.004 | 0.001|
