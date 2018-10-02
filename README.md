@@ -6,16 +6,25 @@ This work describes an implementation of a FEM acoustic application on a GPU usi
 
 ## Results:
 
-SINGLE PRECISION IMPLEMENTATION OF FEM MODEL
+**CPU:** MacBook Pro (early 2015) with a 2.9GHz Intel Core i5 processor and 8 GB 1867 MHz DDR3 RAM memory.
+**GPU:** CUDA libraries running on a TITAN X (Pascal) GPU.
 
+Single precision implementation:
 
-| Matrix Size n | MATLAB | Divide and Conquer | Jacobi |
+| Matrix Size n | MATLAB+ | Divide and Conquer* | Jacobi* |
 | --- | --- |  --- |  --- | 
 |64 | 0.002 | 0.004 | 0.001|
 |512 | 0.022 | 0.078 | 0.015|
 |1728 | 0.657 | 1.101 |0.259|
 |4096 | 8.423 | 11.399 | 2.088|
 |8000 | 56.729 | 91.792 | 11.519|
+
+
+
+
+
+
+
 
 Matrix Size n
 Execution Mean Time in Seconds
