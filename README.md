@@ -15,9 +15,9 @@ The acoustic model is a rectangular rigid-walled cavity with dimensions `Lx × L
 ### Simulation Procedure
 The CUDA and MATLAB implementations execute the following procedure:
 1) Inertia and stiffness matrices are created based on the cavity features. These matrices give the behavior of a single acoustic element.
-2) According to the number of the chosen elements, the global matrix assembly process is computed using iner- tia and stiffness matrices for each element.
-3) For CUDA, Divide an conquer (cusolverDn<t>sygvd()) and (cusolverDn<t>sygvj()) method are applied to solve the global matrices of the model (Jacobi method with tolerance value: 1e−3 and the maximum number of sweeps: 15).
-4) For MATLAB (CPU), eig() function is used (QR method) to solve the global matrices.
+2) According to the number of the chosen elements, the global matrix assembly process is computed using inertia and stiffness matrices for each element.
+3) For CUDA,` Divide an conquer (cusolverDn<t>sygvd()) and (cusolverDn<t>sygvj())` method are applied to solve the global matrices of the model (Jacobi method with tolerance value: 1e−3 and the maximum number of sweeps: 15).
+4) For MATLAB (CPU), `eig() function` is used (`QR method`) to solve the global matrices.
   
 ## Performance Test
 The rectangular cavity is divided into regular elements, thus the number of nodes corresponds to the number of divisions in any side plus one raised to the cube. For example: if the `number of divisions is 3` the global matrices are of size `n×n` where `n = (number of divisions +1)3 = 43 = 64 (grid size of 4×4×4)`.<br>
@@ -69,8 +69,8 @@ Using `GPU-only implementation in single precision`, eigenvectors were computed 
 
 
 ## Final notes
--In the best case, execution time of Dense Matrix Solver was shortened from 56.73 seconds (CPU: MATLAB) to 11.52 seconds (GPU: Jacobi method) with n = 8000 and single precision. 
--Jacobi method in single precision is the fastest method (almost five times faster) to solve the eigenvalue problem. 
--Divide and conquer method finds the most accurate solution. As a result it has the lowest mean absolute error.
+- In the best case, execution time of Dense Matrix Solver was shortened from 56.73 seconds (CPU: MATLAB) to 11.52 seconds (GPU: Jacobi method) with n = 8000 and single precision. 
+- Jacobi method in single precision is the fastest method (almost five times faster) to solve the eigenvalue problem. 
+- Divide and conquer method finds the most accurate solution. As a result it has the lowest mean absolute error.
 
 
