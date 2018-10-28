@@ -19,7 +19,7 @@ For CUDA, just do `make`:
  
  C: Precision type. `0` for Single, `1` for Double. 
 
-For MATLAB, run: `fem_acoustic1.h`.
+For MATLAB, run: `fem_acoustic_1.h`.
 
 ## Notes
 CUDA 9.2 is needed(also cuSolver).
