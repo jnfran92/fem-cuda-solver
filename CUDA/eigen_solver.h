@@ -27,7 +27,7 @@ void write_csv_eigens_float(float *V, float *W, int lda ){
 		std::cout << "Exception was thrown: " << ex.what() << std::endl;
 	}
 
-	printf("First 15 Eigenvalues saved ./data_out/eigenvalues.csv \n");
+	printf("First 15 Eigenvalues saved in: ./data_out/eigenvalues.csv \n");
 
 
 	long v_max = 15;
@@ -44,7 +44,7 @@ void write_csv_eigens_float(float *V, float *W, int lda ){
 		std::cout << "Exception was thrown: " << ex.what() << std::endl;
 	}
 
-	printf("First 15 Eigenvectors saved in ./data_out/eigenvectors.csv \n");
+	printf("First 15 Eigenvectors saved in: ./data_out/eigenvectors.csv \n");
 
 }
 
@@ -53,7 +53,7 @@ void write_csv_eigens_double(double *V, double *W, int lda){
 	long w_max = 15;
 
 	try {
-		csvfile csv("../CUDA/data_out/eigenvalues.csv"); // throws exceptions!
+		csvfile csv("./CUDA/data_out/eigenvalues.csv"); // throws exceptions!
 		for (long i = 0; i < w_max; i++) {
 			csv<< W[i];
 			csv << endrow;
@@ -62,13 +62,13 @@ void write_csv_eigens_double(double *V, double *W, int lda){
 		std::cout << "Exception was thrown: " << ex.what() << std::endl;
 	}
 
-	printf("First 15 Eigenvalues saved! \n");
+	printf("First 15 Eigenvalues saved in: ./CUDA/data_out/eigenvalues.csv \n");
 
 
 	long v_max = 15;
 
 	try {
-		csvfile csv("../CUDA/data_out/eigenvectors.csv"); // throws exceptions!
+		csvfile csv("./CUDA/data_out/eigenvectors.csv"); // throws exceptions!
 		for (long i = 0; i < lda; i++) {
 			for (long j = 0; j < v_max; j++) {
 				csv<< V[lda * j + i];
@@ -79,7 +79,7 @@ void write_csv_eigens_double(double *V, double *W, int lda){
 		std::cout << "Exception was thrown: " << ex.what() << std::endl;
 	}
 
-	printf("First 15 Eigenvectors saved! \n");
+	printf("First 15 Eigenvectors saved in: ./CUDA/data_out/eigenvectors.csv  \n");
 
 }
 
