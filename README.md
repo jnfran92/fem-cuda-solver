@@ -8,7 +8,7 @@ Just do `make`:
 ```
   cd CUDA
   make
-  ./fem-solver A B C
+  ./fem_solver A B C
  ```
  
  A: Number of nodes n in grid `n x n x n`
