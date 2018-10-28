@@ -19,9 +19,10 @@ Just do `make`:
 
 ## Notes
 CUDA 9.2 is needed(also cuSolver)
+
 NVIDIA Tesla Titan X, P100 and V100 were tested.
 
 
 ## For more information
-Please see the wiki: [Go!](https://github.com/jnfran92/fem-cuda-solver/wiki)
+Please see the wiki: [Lets Go!](https://github.com/jnfran92/fem-cuda-solver/wiki)
 
