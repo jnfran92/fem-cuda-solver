@@ -5,7 +5,7 @@ An implementation of a FEM acoustic model on a GPU using C/C++ and CUDA librarie
 [![Article](https://img.shields.io/badge/ieee-article-blue.svg)](https://www.google.com) 
 
 ## Quick steps
-Just do `make`:
+For CUDA, just do `make`:
 
 ```
   cd CUDA
@@ -19,7 +19,9 @@ Just do `make`:
  
  C: Precision type. `0` for Single, `1` for Double. 
 
+For MATLAB, run: `fem_acoustic1.h`.
+
 ## Notes
-CUDA 9.2 is needed(also cuSolver)
+CUDA 9.2 is needed(also cuSolver).
 
 NVIDIA Tesla Titan X, P100 and V100 were tested.
