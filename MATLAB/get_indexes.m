@@ -1,0 +1,10 @@
+function out = get_indexes(i,j,k,n, dofs_element)
+    out = zeros(1,dofs_element);
+    out(1) = dof_n(i,j,k,n);
+    out(2) = dof_n(i+1,j,k,n);
+    out(3) = dof_n(i+1,j+1,k,n);
+    out(4) = dof_n(i,j+1,k,n);
+    out(5) = dof_n(i,j,k+1,n);
+    out(6) = dof_n(i+1,j,k+1,n);
+    out(7) = dof_n(i+1,j+1,k+1,n);
+    out(8) = dof_n(i,j+1,k+1,n);
