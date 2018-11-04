@@ -24,4 +24,4 @@ For MATLAB, run: `fem_acoustic_1.h`.
 ## Notes
 CUDA 9.2 is needed(also cuSolver).
 
-NVIDIA Tesla Titan X, P100 and V100 were tested.
+NVIDIA Titan X, Tesla  P100 and Tesla  V100 were tested.
