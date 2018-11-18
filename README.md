@@ -21,6 +21,13 @@ For CUDA, just do `make`:
 
 For MATLAB, run: `fem_acoustic_1.h`.
 
+
+## Output
+Arbitrary eigenvectors were used to graph the sound pressure distribution for low and high frequencies in the cavity and they are shown bellow:
+
+![Acoustic FEM Model GPU](https://i.imgur.com/8tDzzqq.png)
+
+
 ## Notes
 CUDA 9.2 is needed(also cuSolver).
 
