@@ -2,7 +2,7 @@
 
 An implementation of a FEM acoustic model on a GPU using C/C++ and CUDA libraries.
 
-[![Article](https://img.shields.io/badge/ieee-article-blue.svg)](https://www.google.com) 
+[![Article](https://img.shields.io/badge/ieee-article-blue.svg)](https://ieeexplore.ieee.org/document/8705226) 
 
 ## Quick steps
 For CUDA, just do `make`:
